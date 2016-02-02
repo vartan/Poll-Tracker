@@ -2,7 +2,7 @@
 var https = require("https");
 var url = "https://www.idpcaucuses.com/api/statecandidateresults";
 var notifier = require("node-notifier");
-let lastReporting = undefined;
+let lastReporting = 0;
 const REFRESH_INTERVAL_SECONDS = 5;
 
 setInterval(refresh, REFRESH_INTERVAL_SECONDS*1000);
