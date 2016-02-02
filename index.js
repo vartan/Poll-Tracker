@@ -5,7 +5,7 @@ var notifier = require("node-notifier");
 let lastReporting = undefined;
 const REFRESH_INTERVAL_SECONDS = 5;
 
-setInterval(doit, REFRESH_INTERVAL_SECONDS*1000);
+setInterval(refresh, REFRESH_INTERVAL_SECONDS*1000);
 refresh();
 
 
